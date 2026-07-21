@@ -234,3 +234,9 @@ nextBtn.addEventListener("click", () => {
 submitForm.addEventListener("submit", submitResult);
 
 document.getElementById("retryBtn").addEventListener("click", () => location.reload());
+document.getElementById("guideBtn").addEventListener("click", () => {
+  window.open(
+    "https://kakari.medpeer.jp/dispensation_fee_encyclopedia/16/original_text",
+    "_blank"
+  );
+});
