@@ -172,6 +172,7 @@ async function submitResult(event) {
   }
 
   const payload = {
+quizTitle:"自家製剤加算"
     timestamp: new Date().toLocaleString("ja-JP"),
     name: document.getElementById("playerName").value.trim(),
     difficulty: document.getElementById("difficulty").value,
