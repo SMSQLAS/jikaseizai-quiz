@@ -123,6 +123,8 @@ const finalScore = document.getElementById("finalScore");
 const finalMessage = document.getElementById("finalMessage");
 const submitForm = document.getElementById("submitForm");
 const sendStatus = document.getElementById("sendStatus");
+const info1Screen = document.getElementById("info1Screen");
+const info2Screen = document.getElementById("info2Screen");
 
 function showQuestion() {
   answered = false;
@@ -199,6 +201,16 @@ quizTitle:"自家製剤加算",
     sendStatus.textContent = "送信に失敗しました。URLや公開設定を確認してください。";
   }
 }
+
+document.getElementById("info1NextBtn").addEventListener("click", () => {
+  info1Screen.classList.add("hidden");
+  info2Screen.classList.remove("hidden");
+});
+
+document.getElementById("info2NextBtn").addEventListener("click", () => {
+  info2Screen.classList.add("hidden");
+  startScreen.classList.remove("hidden");
+});
 
 document.getElementById("startBtn").addEventListener("click", () => {
   startScreen.classList.add("hidden");
