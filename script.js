@@ -193,6 +193,7 @@ quizTitle:"自家製剤加算",
     });
     sendStatus.textContent = "送信しました。";
     submitForm.querySelector('button[type="submit"]').disabled = true;
+    document.getElementById("retryBtn").disabled=false;
   } catch (error) {
     console.error(error);
     sendStatus.textContent = "送信に失敗しました。URLや公開設定を確認してください。";
