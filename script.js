@@ -191,8 +191,8 @@ quizTitle:"自家製剤加算",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
       body: JSON.stringify(payload)
     });
-    sendStatus.textContent = "送信しました。スプレッドシートを確認してください。";
-    submitForm.querySelector("button").disabled = true;
+    sendStatus.textContent = "送信しました。";
+    submitForm.querySelector('button[type="submit"]').disabled = true;
   } catch (error) {
     console.error(error);
     sendStatus.textContent = "送信に失敗しました。URLや公開設定を確認してください。";
