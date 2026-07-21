@@ -128,7 +128,7 @@ function showQuestion() {
   const q = questions[current];
   progress.textContent = `${current + 1} / ${questions.length}`;
   scoreEl.textContent = `正解 ${score}`;
-  questionText.textContent = q.text;
+  questionText.innerHTML = q.text;
   resultBox.classList.add("hidden");
   document.querySelectorAll(".answer").forEach(btn => btn.disabled = false);
 }
