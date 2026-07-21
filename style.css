@@ -89,3 +89,19 @@ input, select {
   .card { padding: 22px; }
   .actions { grid-template-columns: 1fr; }
 }
+.guide{
+  width:100%;
+  padding:16px;
+  margin-top:12px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(90deg,#81D4FA,#4FC3F7);
+  color:#fff;
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.guide:hover{
+  background:linear-gradient(90deg,#4FC3F7,#29B6F6);
+}
