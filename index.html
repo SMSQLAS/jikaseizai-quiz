@@ -8,10 +8,34 @@
 </head>
 <body>
   <main class="app">
-    <section class="card" id="startScreen">
+    <section class="card" id="info1Screen">
+  <p class="badge">説明 1 / 2</p>
+  <h2>自家製剤加算について</h2>
+
+  <p class="lead">
+    ここに1ページ目の説明文を入力します。<br>
+    改行したいところには &lt;br&gt; を入れてください。
+  </p>
+
+  <button class="primary" id="info1NextBtn">次へ</button>
+</section>
+
+<section class="card hidden" id="info2Screen">
+  <p class="badge">説明 2 / 2</p>
+  <h2>算定時のポイント</h2>
+
+  <p class="lead">
+    ここに2ページ目の説明文を入力します。<br>
+    太字にしたい部分は
+    <strong>このように書きます。</strong>
+  </p>
+
+  <button class="primary" id="info2NextBtn">次へ</button>
+</section>
+    <section class="card hidden" id="startScreen">
       <p class="badge">自家製剤加算</p>
       <h1>スキルアップクイズ</h1>
-      <p class="lead">問題を読んで「算定できる／できない」を選んでください。最後に名前と難易度を入力して、結果をGoogleスプレッドシートへ送信できます。</p>
+      <p class="lead">問題を読んで「算定できる／できない」を選んでください。<br>薬剤名が出てくる問題は、実際に調べてから選んで下さい。</p>
       <button class="primary" id="startBtn">開始する</button>
     </section>
 
