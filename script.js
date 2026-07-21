@@ -1,5 +1,5 @@
 const questions = [
-  { <table style="border-collapse:separate; border-spacing:20px 6px;">
+  {
     text: "錠剤を半錠に割って調剤した。薬価基準に同一規格の半量規格がない場合、自家製剤加算を算定できるか。",
     answer: true,
     explanation: "同一剤形・同一規格で代替できる薬価収載品がない場合は、割錠による自家製剤加算の対象になり得ます。"
